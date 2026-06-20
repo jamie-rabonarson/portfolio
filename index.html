@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Jamie RABONARSON – Développeuse d'application, étudiante en BUT Informatique à l'IUT de Créteil-Vitry.">
     <title>Jamie RABONARSON – Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="static/style.css">
@@ -29,7 +30,8 @@
 
     <main>
 
-        <section id="accueil" class="hero">
+        <!-- ===== HERO ===== -->
+        <section id="accueil" class="hero fade-in">
             <div class="hero-text">
                 <p class="hero-label">Bonjour, je suis</p>
                 <h1>Jamie <span class="accent">RABONARSON</span></h1>
@@ -38,26 +40,31 @@
                 <div class="hero-buttons">
                     <a href="#projets" class="btn btn-primary">Voir mes projets</a>
                     <a href="#contact" class="btn btn-outline">Me contacter</a>
-                    <a href="#" class="btn btn-ghost" download>📄 Mon CV</a>
+                    <!-- <a href="#" class="btn btn-ghost" download>📄 Mon CV</a> -->
+                    <!-- ↑ Remplace href="#" par href="static/cv.pdf" -->
                 </div>
                 <div class="hero-social">
-                    <a href="https://github.com/" target="_blank" class="social-link" aria-label="GitHub">
+                    <a href="https://github.com/jamie-rabonarson" target="_blank" class="social-link" aria-label="GitHub">
+                        <!-- ↑ Remplace TON_PSEUDO -->
                         <i class="devicon-github-original"></i>
                     </a>
-                    <a href="https://linkedin.com/in/" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/jamie-rabonarson/" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <!-- ↑ Remplace TON_PROFIL -->
                         <i class="devicon-linkedin-plain"></i>
                     </a>
                 </div>
             </div>
             <div class="hero-avatar">
+                <!-- Remplace par ta photo : <img src="static/photo.jpg" alt="Jamie RABONARSON"> -->
                 <div class="avatar-placeholder">JR</div>
             </div>
         </section>
 
         <!-- ===== COMPÉTENCES ===== -->
-        <section id="competences" class="section">
+        <section id="competences" class="section fade-in">
             <h2 class="section-title">Mes compétences</h2>
             <div class="skills-grid">
+
                 <div class="skill-block">
                     <h3>Langages</h3>
                     <div class="tags">
@@ -66,8 +73,10 @@
                         <span class="tag"><i class="devicon-javascript-plain"></i> JavaScript</span>
                         <span class="tag"><i class="devicon-html5-plain"></i> HTML</span>
                         <span class="tag"><i class="devicon-css3-plain"></i> CSS</span>
+                        <span class="tag">C#</span>
                     </div>
                 </div>
+
                 <div class="skill-block">
                     <h3>Frameworks &amp; librairies</h3>
                     <div class="tags">
@@ -75,6 +84,7 @@
                         <span class="tag"><i class="devicon-spring-plain"></i> Spring Boot</span>
                     </div>
                 </div>
+
                 <div class="skill-block">
                     <h3>Base de données</h3>
                     <div class="tags">
@@ -82,6 +92,7 @@
                         <span class="tag"><i class="devicon-mongodb-plain"></i> MongoDB</span>
                     </div>
                 </div>
+
                 <div class="skill-block">
                     <h3>Outils &amp; DevOps</h3>
                     <div class="tags">
@@ -90,6 +101,7 @@
                         <span class="tag"><i class="devicon-docker-plain"></i> Docker</span>
                     </div>
                 </div>
+
                 <div class="skill-block">
                     <h3>Systèmes d'exploitation</h3>
                     <div class="tags">
@@ -97,6 +109,7 @@
                         <span class="tag"><i class="devicon-linux-plain"></i> Linux</span>
                     </div>
                 </div>
+
                 <div class="skill-block">
                     <h3>Langues</h3>
                     <div class="tags">
@@ -105,13 +118,15 @@
                         <span class="tag">🇪🇸 Espagnol</span>
                     </div>
                 </div>
+
             </div>
         </section>
 
         <!-- ===== PARCOURS ===== -->
-        <section id="parcours" class="section">
+        <section id="parcours" class="section fade-in">
             <h2 class="section-title">Mon Parcours</h2>
             <div class="timeline">
+
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
@@ -121,114 +136,151 @@
                         <p>Formation en développement d'applications, bases de données, réseaux et gestion de projets. Spécialisation web.</p>
                     </div>
                 </div>
+
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
                         <span class="timeline-date">2023</span>
                         <h3>Baccalauréat</h3>
-                        <p class="timeline-lieu">Lycée [Nom du lycée]</p>
-                        <p>Obtenu avec mention [Mention]. Spécialités : [à compléter].</p>
+                        <p class="timeline-lieu">Lycée Adolphe Chérioux</p>
+                        <p>Obtenu avec mention assez bien. Spécialités : Mathématique, Numérique Science Informatique (NSI).</p>
                     </div>
                 </div>
+
             </div>
         </section>
 
         <!-- ===== PROJETS ===== -->
-        <section id="projets" class="section">
+        <section id="projets" class="section fade-in">
             <h2 class="section-title">Mes Projets</h2>
             <div class="projects-grid">
+
                 <div class="project-card">
-                    <div class="project-img-placeholder"><span>Aperçu</span></div>
+                    <div class="project-img-placeholder">
+                        <!-- <img src="static/sae301.png" alt="Météothèque"> -->
+                        <span>Aperçu</span>
+                    </div>
                     <div class="project-info">
-                        <h3>Nom du projet 1</h3>
-                        <p>Courte description du projet : ce qu'il fait, le problème qu'il résout, ton rôle.</p>
+                        <h3>Météothèque – SAE 3.01</h3>
+                        <p>Application web de visualisation de données météorologiques. Gestion de comptes (admin / utilisateur), dashboards personnalisables avec graphiques, stations météo et filtres spatiaux/temporels.</p>
                         <div class="tags">
-                            <span class="tag"><i class="devicon-react-original"></i> React</span>
-                            <span class="tag"><i class="devicon-nodejs-plain"></i> Node.js</span>
+                            <span class="tag"><i class="devicon-php-plain"></i> PHP</span>
                             <span class="tag"><i class="devicon-mysql-plain"></i> MySQL</span>
+                            <span class="tag"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                            <span class="tag">Chart.js</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank" class="btn btn-small">GitHub</a>
-                            <a href="#" target="_blank" class="btn btn-small btn-outline">Démo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img-placeholder"><span>Aperçu</span></div>
-                    <div class="project-info">
-                        <h3>Nom du projet 2</h3>
-                        <p>Courte description du projet : ce qu'il fait, le problème qu'il résout, ton rôle.</p>
-                        <div class="tags">
-                            <span class="tag"><i class="devicon-python-plain"></i> Python</span>
-                            <span class="tag"><i class="devicon-docker-plain"></i> Docker</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank" class="btn btn-small">GitHub</a>
+                        <div class="ue-tags">
+                            <span class="ue-tag">Réaliser</span>
+                            <span class="ue-tag">Gérer</span>
+                            <span class="ue-tag">Collaborer</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="project-card">
-                    <div class="project-img-placeholder"><span>Aperçu</span></div>
+                    <div class="project-img-placeholder">
+                        <!-- <img src="static/taskservice.png" alt="Task Service"> -->
+                        <span>Aperçu</span>
+                    </div>
                     <div class="project-info">
-                        <h3>Nom du projet 3</h3>
-                        <p>Courte description du projet : ce qu'il fait, le problème qu'il résout, ton rôle.</p>
+                        <h3>Task Service – API REST</h3>
+                        <p>API REST de gestion de tâches construite avec Spring Boot. CRUD complet, conteneurisée avec Docker et déployée via une pipeline CI/CD GitHub Actions (build Maven + push Docker Hub).</p>
                         <div class="tags">
                             <span class="tag"><i class="devicon-java-plain"></i> Java</span>
                             <span class="tag"><i class="devicon-spring-plain"></i> Spring Boot</span>
+                            <span class="tag"><i class="devicon-docker-plain"></i> Docker</span>
+                            <span class="tag"><i class="devicon-github-original"></i> CI/CD</span>
+                        </div>
+                        <div class="ue-tags">
+                            <span class="ue-tag">Réaliser</span>
+                            <span class="ue-tag">Administrer</span>
+                            <span class="ue-tag">Optimiser</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" target="_blank" class="btn btn-small">GitHub</a>
-                            <a href="#" target="_blank" class="btn btn-small btn-outline">Démo</a>
+                            <a href="https://github.com/jamie-rabonarson/web_springboot" target="_blank" class="btn btn-small">GitHub</a>
                         </div>
                     </div>
                 </div>
+
+                <div class="project-card">
+                    <div class="project-img-placeholder">
+                        <!-- <img src="static/speechcore.png" alt="SpeechCore"> -->
+                        <span>Aperçu</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>SpeechCore</h3>
+                        <p>Application de reconnaissance vocale pour la retranscription automatique de comptes rendus médicaux. L'audio est transcrit en temps réel via l'API Whisper d'OpenAI et affiché dans une interface React.</p>
+                        <div class="tags">
+                            <span class="tag"><i class="devicon-react-original"></i> React</span>
+                            <span class="tag">Whisper API</span>
+                            <span class="tag"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                        </div>
+                        <div class="ue-tags">
+                            <span class="ue-tag">Réaliser</span>
+                            <span class="ue-tag">Collaborer</span>
+                            <span class="ue-tag">Conduire</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/NEXUS-AI-Innovation-lab-for-Health/SpeechCore" target="_blank" class="btn btn-small">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <!-- ===== EXPÉRIENCE ===== -->
-        <section id="experience" class="section">
+        <section id="experience" class="section fade-in">
             <h2 class="section-title">Expérience Professionnelle</h2>
             <div class="timeline">
+
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
-                        <span class="timeline-date">[Mois Année] – [Mois Année]</span>
-                        <h3>[Intitulé du poste]</h3>
-                        <p class="timeline-lieu">[Nom de l'entreprise] – [Ville]</p>
+                        <span class="timeline-date">Septembre 2024 – Septembre 2026</span>
+                        <h3>Alternante – Développeuse d'application &amp; GED</h3>
+                        <p class="timeline-lieu">Ageo, part of Howden</p>
                         <ul class="timeline-missions">
-                            <li>Mission ou responsabilité 1</li>
-                            <li>Mission ou responsabilité 2</li>
-                            <li>Mission ou responsabilité 3</li>
+                            <li>Gestion et maintenance de modèles de courriers mail</li>
+                            <li>Rebranding des templates suite à la migration vers la marque Howden</li>
+                            <li>Publipostage de mail (envois en masse)</li>
+                            <li>Développement d'une IHM de visualisation de modèles BDOC</li>
                         </ul>
                         <div class="tags" style="margin-top:10px">
-                            <span class="tag"><i class="devicon-java-plain"></i> Java</span>
+                            <span class="tag">C#</span>
                             <span class="tag"><i class="devicon-python-plain"></i> Python</span>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
         <!-- ===== CONTACT ===== -->
-        <section id="contact" class="section">
+        <section id="contact" class="section fade-in">
             <h2 class="section-title">Contact</h2>
             <p class="contact-intro">Une idée de projet, une opportunité, ou juste envie d'échanger ? Écris-moi !</p>
+
             <div class="contact-wrapper">
                 <div class="contact-links">
-                    <a href="mailto:jrabonarsons@gmail.com" class="contact-item">
+                    <a href="mailto:jamie.rabonarson@gmail.com" class="contact-item">
                         <span class="contact-icon">✉️</span>
-                        <span>jrabonarsons@gmail.com</span>
+                        <span>jamie.rabonarson@gmail.com</span>
                     </a>
-                    <a href="https://linkedin.com/in/" target="_blank" class="contact-item">
+                    <a href="https://www.linkedin.com/in/jamie-rabonarson/" target="_blank" class="contact-item">
+                        <!-- ↑ Remplace TON_PROFIL -->
                         <span class="contact-icon"><i class="devicon-linkedin-plain"></i></span>
                         <span>LinkedIn</span>
                     </a>
-                    <a href="https://github.com/" target="_blank" class="contact-item">
+                    <a href="https://github.com/jamie-rabonarson" target="_blank" class="contact-item">
+                        <!-- ↑ Remplace TON_PSEUDO -->
                         <span class="contact-icon"><i class="devicon-github-original"></i></span>
                         <span>GitHub</span>
                     </a>
                 </div>
-                <form class="contact-form" action="https://formspree.io/f/TONID" method="POST">
+
+                <form class="contact-form" action="https://formspree.io/f/xkolwozy" method="POST">
+                    <!-- ↑ Remplace TONID par ton endpoint Formspree -->
                     <div class="form-group">
                         <label for="name">Nom</label>
                         <input type="text" id="name" name="name" placeholder="Ton nom" required>
@@ -255,5 +307,46 @@
         </div>
     </footer>
 
+    <a href="#top" class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</a>
+
+    <script>
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+        function updateActiveLink() {
+            let current = '';
+            sections.forEach(section => {
+                if (window.scrollY >= section.offsetTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        const backToTop = document.getElementById('backToTop');
+        function handleScroll() {
+            updateActiveLink();
+            backToTop.classList.toggle('visible', window.scrollY > 400);
+        }
+        window.addEventListener('scroll', handleScroll);
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        function toggleMenu() {
+            document.querySelector('.navlien').classList.toggle('open');
+        }
+    </script>
 </body>
 </html>
